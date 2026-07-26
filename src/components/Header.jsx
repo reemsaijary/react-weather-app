@@ -1,8 +1,13 @@
 function Header() {
   return (
-    <header>
-      <h1>Weather App</h1>
-      <p>Check the current weather in any city.</p>
+    <header className="header">
+      <p className="header-label">Weather Forecast</p>
+
+      <h1>SkyCast</h1>
+
+      <p className="header-description">
+        Search for a city and check its current weather.
+      </p>
     </header>
   )
 }

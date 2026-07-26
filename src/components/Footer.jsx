@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer>
-      <p>Built with React</p>
+    <footer className="footer">
+      <p>Built with React and weather data from Open-Meteo.</p>
     </footer>
   )
 }
