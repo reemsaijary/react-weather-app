@@ -181,6 +181,19 @@
   color: #17324d;
 }
 
+.status-message {
+  padding: 14px 18px;
+  border-radius: 16px;
+  color: #355f7e;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.error-message {
+  color: #8a3540;
+  background: rgba(255, 225, 228, 0.75);
+}
+
 @media (max-width: 700px) {
   .app {
     padding: 16px;
