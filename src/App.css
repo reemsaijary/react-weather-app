@@ -172,6 +172,15 @@
   white-space: nowrap;
 }
 
+.search-result {
+  color: #496b86;
+  text-align: center;
+}
+
+.search-result strong {
+  color: #17324d;
+}
+
 @media (max-width: 700px) {
   .app {
     padding: 16px;
