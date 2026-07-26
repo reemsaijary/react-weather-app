@@ -41,6 +41,13 @@
   line-height: 1;
 }
 
+.header h1 i {
+    margin-right: 12px;
+    color: #f9c74f;
+    font-size: 0.55em;
+    vertical-align: middle;
+}
+
 .header-description {
   margin-top: 14px;
   color: #496b86;
@@ -155,6 +162,22 @@
 
 .weather-details strong {
   color: #284760;
+}
+
+.weather-card {
+    animation: fadeUp .4s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .footer {

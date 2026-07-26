@@ -1,9 +1,11 @@
 function Header() {
   return (
     <header className="header">
-      <p className="header-label">Weather Forecast</p>
+      <p className="header-label">Current Weather</p>
 
-      <h1>SkyCast</h1>
+      <h1>
+        <i className="fa-solid fa-cloud-sun"></i> Weatherly
+        </h1>
 
       <p className="header-description">
         Search for a city and check its current weather.
