@@ -1,4 +1,9 @@
+import {getWeatherDescription,getWeatherIcon,} from '../utils/weatherCode'
+
 function WeatherCard({ weather }) {
+  const description = getWeatherDescription(weather.weatherCode)
+  const icon = getWeatherIcon(weather.weatherCode)
+
   return (
     <section className="weather-card">
       <div className="weather-summary">
@@ -9,13 +14,14 @@ function WeatherCard({ weather }) {
             {weather.city}, {weather.country}
           </h2>
 
-          <p className="weather-condition">
-            Weather code: {weather.weatherCode}
-          </p>
+          <p className="weather-condition">{description}</p>
         </div>
 
         <div className="weather-temperature">
-          <span aria-hidden="true">☁️</span>
+          <span className="weather-icon" aria-label={description}>
+            {icon}
+          </span>
+
           <strong>{Math.round(weather.temperature)}°C</strong>
         </div>
       </div>
